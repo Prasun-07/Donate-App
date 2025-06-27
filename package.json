@@ -6,10 +6,10 @@
         "dev": "next dev --turbopack",
         "build": "next build",
         "start": "next start",
+        "postinstall": "npm rebuild sharp",
         "lint": "next lint",
         "format": "prettier --write .",
-        "prepare": "husky",
-        "postinstall": "npm rebuild sharp"
+        "prepare": "husky"
     },
     "lint-staged": {
         "**/*": "prettier --write --ignore-unknown"
